@@ -472,46 +472,8 @@ document.addEventListener('DOMContentLoaded', function () {
             showStep('step-4', 3800);
 
             setTimeout(() => {
-                // Hide Quiz Elements
-                document.querySelector('.quiz-header').style.display = 'none';
-                document.querySelector('.progress-container').style.display = 'none';
-                document.getElementById('quiz-content').style.display = 'none';
-                document.querySelector('.quiz-footer').style.display = 'none';
-
-                // Show Sales Page
-                const salesPage = document.getElementById('sales-page');
-                if (salesPage) {
-                    salesPage.style.display = 'block';
-                    document.body.style.background = '#050a08'; // Ensure background matches sales page
-
-                    // Update Date if element exists
-                    const dateEl = document.getElementById('current-date');
-                    if (dateEl) {
-                        const now = new Date();
-                        dateEl.textContent = now.toLocaleDateString('pt-BR');
-                    }
-
-                    // Start Timer if function available or just simple logic
-                    // Re-trigger the global window.onload or similar for the merged scripts?
-                    // Ideally, we just let the inline logic from index.html (if any) handle it, 
-                    // but since script.js is separate, we might need to kickstart the timer.
-                    const display = document.querySelector('#timer-display');
-                    if (display) {
-                        let timer = 60 * 15, minutes, seconds;
-                        setInterval(function () {
-                            minutes = parseInt(timer / 60, 10);
-                            seconds = parseInt(timer % 60, 10);
-                            minutes = minutes < 10 ? "0" + minutes : minutes;
-                            seconds = seconds < 10 ? "0" + seconds : seconds;
-                            display.textContent = minutes + ":" + seconds;
-                            if (--timer < 0) timer = 0;
-                        }, 1000);
-                    }
-                }
-
-                // Scroll to top
-                window.scrollTo(0, 0);
-
+                // Redirect to the Checkout Page (checkout.html)
+                window.location.href = 'checkout.html';
             }, 5500);
         }
     }
