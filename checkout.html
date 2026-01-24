@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -1304,4 +1305,1312 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Plano Está Pronto | Barriga Zero</title>
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Specific Styles for Sales/Checkout Page */
+        .sales-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        .hero-result {
+            background: linear-gradient(135deg, #fce7f3 0%, #fff0f6 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .result-badge {
+            background: var(--primary);
+            color: white;
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        body {
+            background-color: #050a08;
+            color: #f8fafc;
+        }
+
+        .sales-container {
+            background-color: #050a08;
+        }
+
+        .hero-result {
+            background: linear-gradient(135deg, #0a1f14 0%, #050a08 100%);
+            border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .headline,
+        .section-title {
+            color: #fff !important;
+        }
+
+        .subheadline {
+            color: #94a3b8 !important;
+        }
+
+        .offer-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            backdrop-filter: blur(10px);
+            color: #fff;
+        }
+
+        .feature-item,
+        .feature-text p,
+        .user-quote,
+        .guarantee p,
+        .offer-box p {
+            color: #cbd5e1 !important;
+        }
+
+        .feature-text h4 {
+            color: #fff !important;
+        }
+
+        .testimonials-section,
+        .results-section,
+        .app-presentation {
+            background: #050a08;
+            border-bottom: 1px solid rgba(34, 197, 94, 0.1);
+        }
+
+        .testimonial-card,
+        .result-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-card:hover,
+        .result-card:hover {
+            border-color: rgba(34, 197, 94, 0.4) !important;
+            background: rgba(34, 197, 94, 0.05) !important;
+        }
+
+        .user-info h4,
+        .result-info strong {
+            color: #ffffff !important;
+        }
+
+        .user-quote,
+        .result-info p {
+            color: #94a3b8 !important;
+        }
+
+        .feature-icon {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+        }
+
+
+        .headline {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .subheadline {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        /* Video Placeholder */
+        .vsl-wrapper {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        /* Offer Section Redesign */
+        .offer-box {
+            background: linear-gradient(145deg, #0a1f14 0%, #050a08 100%);
+            border: 1px solid rgba(34, 197, 94, 0.4);
+            border-radius: 24px;
+            padding: 2.5rem 1.5rem;
+            margin: 3rem 1.5rem;
+            box-shadow: 0 0 50px rgba(34, 197, 94, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #22c55e, transparent);
+        }
+
+        .bundle-image {
+            max-width: 480px;
+            /* Limited width for better aesthetics */
+            width: 100%;
+            height: auto;
+            margin-bottom: 2.5rem;
+            filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.6));
+        }
+
+        .price-tag {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #22c55e;
+            margin: 1.5rem 0;
+            letter-spacing: -2px;
+            text-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+        }
+
+        .price-tag span {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .btn-cta {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            width: 100%;
+            padding: 22px;
+            border-radius: 16px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-transform: uppercase;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(34, 197, 94, 0.5);
+        }
+
+        .btn-cta small {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        /* Order Bump Styles */
+        .order-bumps-container {
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .order-bump-item {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px dashed rgba(34, 197, 94, 0.4);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .order-bump-item:hover {
+            background: rgba(34, 197, 94, 0.1);
+            transform: scale(1.01);
+        }
+
+        .order-bump-checkbox {
+            width: 24px;
+            height: 24px;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .order-bump-info h4 {
+            font-size: 0.95rem;
+            color: #fff;
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .order-bump-info p {
+            font-size: 0.8rem;
+            color: #94a3b8 !important;
+            margin: 0;
+        }
+
+        .order-bump-price {
+            margin-left: auto;
+            font-weight: 800;
+            color: #22c55e;
+            font-size: 0.9rem;
+        }
+
+        .bump-badge {
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            background: #d63031;
+            color: white;
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 900;
+            text-transform: uppercase;
+            animation: pulse-red 2s infinite;
+        }
+
+        @keyframes pulse-red {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(214, 48, 49, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(214, 48, 49, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(214, 48, 49, 0);
+            }
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .feature-item i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 5rem 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+            margin-bottom: 2.5rem;
+            color: #fff !important;
+            letter-spacing: -0.5px;
+        }
+
+        .user-quote {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+
+        .guarantee {
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .guarantee img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonial Carousel - Final Ultra-Stable Styles */
+        .testimonial-carousel {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 24px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+            will-change: transform;
+            /* width will be set by JS or more robustly handled in media query */
+        }
+
+        .testimonial-card {
+            width: 100%;
+            /* Default for desktop or base centering */
+            flex-shrink: 0;
+            padding: 2.5rem;
+            display: flex;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.035);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-sizing: border-box;
+            margin: 0;
+            border-radius: 20px;
+        }
+
+        .user-avatar {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+        }
+
+        .user-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .user-info h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            color: #f59e0b;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .user-quote {
+            font-size: 1rem;
+            color: #cbd5e1;
+            font-style: italic;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Results Section Styles */
+        .results-section {
+            padding: 5rem 1.5rem;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 640px) {
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .result-card {
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(192, 38, 211, 0.15);
+        }
+
+        .result-label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 2;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .result-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .result-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .result-info p {
+            margin: 0;
+            color: #333;
+        }
+
+        .result-info strong {
+            font-size: 1rem;
+            color: #000;
+        }
+
+        /* App Presentation Section */
+        .app-presentation {
+            background: linear-gradient(180deg, #050a08 0%, #0a1f14 100%);
+            padding: 5rem 1.5rem;
+            text-align: center;
+            overflow: hidden;
+            border-top: 1px solid rgba(34, 197, 94, 0.2);
+            border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .app-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .app-content {
+                flex-direction: row;
+                text-align: left;
+                align-items: center;
+            }
+
+            .app-mockup {
+                flex: 1;
+            }
+
+            .app-features {
+                flex: 1;
+            }
+        }
+
+        .app-mockup img {
+            max-width: 550px;
+            /* Increased to better match features height */
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 50px rgba(34, 197, 94, 0.45));
+            animation: float 8s ease-in-out infinite;
+            border-radius: 40px;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(1deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .app-feature-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid rgba(34, 197, 94, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .app-feature-item:hover {
+            background: rgba(34, 197, 94, 0.05);
+            border-color: rgba(34, 197, 94, 0.3);
+            transform: translateX(10px);
+        }
+
+        .feature-icon {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
+        }
+
+        .feature-text h4 {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        .feature-text p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+
+        /* Conversion Optimization Styles */
+        .timer-bar {
+            background: #d63031;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .diagnostic-card {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diagnostic-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .diagnostic-tag {
+            background: #22c55e;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .diagnostic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .diag-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+        }
+
+        .diag-item strong {
+            display: block;
+            color: #22c55e;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .trust-seals {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1.5rem;
+            opacity: 0.7;
+            flex-wrap: wrap;
+        }
+
+        .seal-item {
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #94a3b8;
+        }
+
+        .faq-section {
+            padding: 4rem 1.5rem;
+            background: #050a08;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(34, 197, 94, 0.05);
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 15px 20px;
+            max-height: 200px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-item.active i {
+            transform: rotate(180deg);
+        }
+
+        /* Final Responsive Stability Fix - V3 */
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                width: 100% !important;
+                overflow-x: hidden !important;
+                position: relative;
+                margin: 0;
+                padding: 0;
+            }
+
+            .sales-container {
+                width: 100% !important;
+                max-width: 100% !important;
+                overflow-x: hidden !important;
+                padding-bottom: 100px;
+                /* Space for fixed footer */
+                margin: 0;
+            }
+
+            .hero-result {
+                padding: 2rem 1rem;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .headline {
+                font-size: 1.45rem !important;
+                /* Slightly smaller to prevent any overflow */
+                line-height: 1.25;
+                font-weight: 800;
+                word-wrap: break-word;
+                padding: 0 5px;
+                text-align: center;
+            }
+
+            .subheadline {
+                font-size: 0.95rem;
+                padding: 0 10px;
+                text-align: center;
+                line-height: 1.5;
+            }
+
+
+
+            .offer-box {
+                margin: 2rem 0.75rem;
+                padding: 1.8rem 1rem;
+                width: auto;
+                /* Let it be natural within margins */
+            }
+
+            .bundle-image {
+                max-width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            .price-tag {
+                font-size: 2.4rem;
+                letter-spacing: -1px;
+            }
+
+            .btn-cta {
+                padding: 18px 10px;
+                font-size: 1.1rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem 1rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
+
+            .user-avatar {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+            }
+
+            .user-info h4 {
+                font-size: 1rem;
+            }
+
+            .user-quote {
+                font-size: 0.85rem;
+                line-height: 1.4;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                padding: 0 10px;
+            }
+
+            .app-mockup img {
+                max-width: 100%;
+                border-radius: 20px;
+            }
+
+            .app-presentation {
+                padding: 3rem 1rem;
+            }
+        }
+
+        /* Essential Global Reset */
+        * {
+            box-sizing: border-box !important;
+        }
+
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+            background-color: #050a08;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="timer-bar" id="top-timer">
+        Sua oferta especial expira em: <span id="timer-display">15:00</span>
+    </div>
+
+    <div class="sales-container">
+        <!-- Hero Result -->
+        <div class="hero-result">
+            <div class="result-badge"><i class="fas fa-check-circle"></i> Análise Concluída</div>
+            <h1 class="headline">Seu Plano <span style="color: var(--primary);">Barriga Zero</span> está pronto!</h1>
+
+            <!-- Visual Diagnostic Card -->
+            <div class="diagnostic-card">
+                <div class="diagnostic-header">
+                    <span class="diagnostic-tag">Diagnóstico Personalizado</span>
+                    <i class="fas fa-microchip" style="color: #22c55e;"></i>
+                </div>
+                <div class="diagnostic-grid">
+                    <div class="diag-item">
+                        <strong>Perfil Analisado</strong>
+                        <span id="diag-gender">Feminino</span>
+                    </div>
+                    <div class="diag-item">
+                        <strong>Metabolismo</strong>
+                        <span>Ativo / Em Queima</span>
+                    </div>
+                    <div class="diag-item">
+                        <strong>Foco Principal</strong>
+                        <span id="diag-zone">Corpo Inteiro</span>
+                    </div>
+                    <div class="diag-item">
+                        <strong>Potencial 21 Dias</strong>
+                        <span style="color: #22c55e; font-weight: 800;">ALTO (8-12kg)</span>
+                    </div>
+                </div>
+                <div
+                    style="margin-top: 15px; font-size: 0.75rem; color: #94a3b8; display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-sync-alt fa-spin"></i> Sincronizado com suas respostas do Quiz
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Inside the App Section -->
+        <div class="app-presentation">
+            <h3 class="section-title" style="font-size: 2.2rem; margin-bottom: 3rem;">Por dentro da <span
+                    style="color: var(--primary);">Plataforma</span></h3>
+            <div class="app-content">
+                <div class="app-mockup">
+                    <img src="./images/app_mockup_v5.png" alt="App Dashboard Mockup">
+                </div>
+                <div class="app-features">
+                    <div class="feature-grid">
+                        <div class="app-feature-item">
+                            <div class="feature-icon"><i class="fas fa-dumbbell"></i></div>
+                            <div class="feature-text">
+                                <h4>Treinos Inteligentes</h4>
+                                <p>Rotinas focadas em queima rápida de gordura e definição abdominal em casa.</p>
+                            </div>
+                        </div>
+                        <div class="app-feature-item">
+                            <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                            <div class="feature-text">
+                                <h4>Cardápio Automático</h4>
+                                <p>Receitas deliciosas que se ajustam ao seu gosto e aceleram seu metabolismo.</p>
+                            </div>
+                        </div>
+                        <div class="app-feature-item">
+                            <div class="feature-icon"><i class="fas fa-tint"></i></div>
+                            <div class="feature-text">
+                                <h4>Controle Metabólico</h4>
+                                <p>Monitore sua hidratação e veja seu corpo desinchar dia após dia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- The Product / Offer -->
+        <div class="offer-box" id="offer">
+            <img src="./images/app_mockup_v4.png" alt="Barriga Zero App" class="bundle-image">
+            <h2 style="font-size: 2.2rem; font-weight: 900; margin-bottom: 15px; color: #fff; letter-spacing: -1px;">
+                Protocolo <span style="color: #22c55e;">Barriga Zero</span></h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #94a3b8;">Acesso imediato ao método completo + 2
+                Bônus Exclusivos.
+            </p>
+
+            <ul class="features-list">
+                <li class="feature-item"><i class="fas fa-check-circle" style="color: #22c55e;"></i> <span><strong>App
+                            Barriga Zero:</strong> Treinos de 15 min + Macros</span></li>
+                <li class="feature-item"><i class="fas fa-check-circle" style="color: #22c55e;"></i> <span><strong>BÔNUS
+                            1:</strong> Protocolo de Treinos (Casa)</span></li>
+                <li class="feature-item"><i class="fas fa-check-circle" style="color: #22c55e;"></i> <span><strong>BÔNUS
+                            2:</strong> Detox 7 Dias (Desinchar)</span></li>
+                <li class="feature-item"><i class="fas fa-check-circle" style="color: #22c55e;"></i> <span>Acesso
+                        Vitalício + Atualizações 2026</span></li>
+            </ul>
+
+            <!-- Order Bumps Removed as requested -->
+
+            <div class="price-tag">
+                <div
+                    style="font-size: 1.2rem; color: #94a3b8; text-decoration: line-through; margin-bottom: 5px; font-weight: 400;">
+                    De R$ 197,00 por</div>
+                <span>12x de</span> R$ 4,71
+                <div style="font-size: 1rem; color: #22c55e; margin-top: 5px; font-weight: 700;">OU R$ 47,00 À VISTA
+                </div>
+            </div>
+
+            <a href="upsell1.html" class="btn-cta">
+                Garantir Meu Acesso Agora
+                <small><i class="fas fa-shield-alt"></i> Compra 100% Segura & Garantida</small>
+            </a>
+
+            <!-- Trust Seals -->
+            <div class="trust-seals">
+                <div class="seal-item"><i class="fas fa-lock"></i> SSL Criptografado</div>
+                <div class="seal-item"><i class="fas fa-check-shield"></i> Satisfação 100%</div>
+                <div class="seal-item"><i class="fas fa-credit-card"></i> Pagamento Seguro</div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials-section">
+            <h3 class="section-title" style="color: #ffffff;">Quem fez, aprovou!</h3>
+
+            <div class="testimonial-carousel">
+                <div class="carousel-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+                            class="user-avatar" alt="Fernanda">
+                        <div class="user-info">
+                            <h4>Fernanda S.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="user-quote">"Eu achava que calistenia era coisa de homem forte, mas esse método
+                                'Cavala' mudou meu corpo em 3 semanas. Minha cintura afinou muito!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                            class="user-avatar" alt="Juliana">
+                        <div class="user-info">
+                            <h4>Juliana M.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="user-quote">"O melhor é não precisar ir pra academia. Faço na sala de casa
+                                enquanto meu bebê dorme. Amei!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+                            class="user-avatar" alt="Carla">
+                        <div class="user-info">
+                            <h4>Carla D.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="user-quote">"Já tinha tentado de tudo, mas esse foco em glúteos e barriga foi o
+                                que realmente funcionou pra mim."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face"
+                            class="user-avatar" alt="Paula">
+                        <div class="user-info">
+                            <h4>Paula R.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="user-quote">"Fiz por 6 semanas e perdi 8kg! O foco em glúteos deixou meu corpo
+                                muito mais harmônico."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face"
+                            class="user-avatar" alt="Amanda">
+                        <div class="user-info">
+                            <h4>Amanda L.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="user-quote">"Nunca tinha conseguido definir a barriga, mas com os treinos rápidos
+                                de 15min fez toda diferença!"</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&h=100&fit=crop&crop=face"
+                            class="user-avatar" alt="Beatriz">
+                        <div class="user-info">
+                            <h4>Beatriz C.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="user-quote">"Estava desanimada com as academias lotadas. Esse método me devolveu a
+                                motivação!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section - Before/After Transformations -->
+        <div class="results-section">
+            <h3 class="section-title" style="color: #ffffff;">Resultados Reais de Quem Seguiu o Método</h3>
+            <p style="text-align: center; color: #94a3b8; margin-bottom: 2rem; font-size: 0.95rem;">
+                Veja as transformações de mulheres que treinaram em casa com calistenia
+            </p>
+
+            <div class="results-grid">
+                <!-- Result 1 -->
+                <div class="result-card">
+                    <div class="result-label">Transformação em 3 semanas</div>
+                    <img src="./images/results/final_1.jpg" alt="Antes e Depois 1" class="result-image">
+                    <div class="result-info">
+                        <p><strong>Paula, 32 anos</strong></p>
+                        <p style="font-size: 0.85rem; color: #cbd5e1;">Perdeu 12kg e definiu abdômen</p>
+                    </div>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="result-card">
+                    <div class="result-label">Transformação em 21 dias</div>
+                    <img src="./images/results/final_2.jpg" alt="Antes e Depois 2" class="result-image">
+                    <div class="result-info">
+                        <p><strong>Juliana, 35 anos</strong></p>
+                        <p style="font-size: 0.85rem; color: #cbd5e1;">Ganhou massa muscular e definição</p>
+                    </div>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="result-card">
+                    <div class="result-label">Transformação em 3 semanas</div>
+                    <img src="./images/results/final_3.jpg" alt="Antes e Depois 3" class="result-image">
+                    <div class="result-info">
+                        <p><strong>Mariana, 28 anos</strong></p>
+                        <p style="font-size: 0.85rem; color: #cbd5e1;">Reduziu medidas e ganhou força</p>
+                    </div>
+                </div>
+
+                <!-- Result 4 -->
+                <div class="result-card">
+                    <div class="result-label">Transformação em 21 dias</div>
+                    <img src="./images/results/final_4.jpg" alt="Antes e Depois 4" class="result-image">
+                    <div class="result-info">
+                        <p><strong>Fernanda, 41 anos</strong></p>
+                        <p style="font-size: 0.85rem; color: #cbd5e1;">Definiu glúteos e pernas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 0.9rem; color: var(--primary); font-weight: 700;">
+                    <i class="fas fa-star"></i> Mais de 50.000 mulheres já transformaram seus corpos
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3 class="section-title">Perguntas Frequentes</h3>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Como vou receber o acesso? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Imediatamente após a confirmação do pagamento, você receberá os dados de
+                        acesso no seu e-mail cadastrado. Se pagar via PIX ou Cartão, o envio é instantâneo.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Preciso de equipamentos de academia? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">Não! O Protocolo Barriga Zero foi desenhado para ser feito 100% em casa,
+                        usando apenas o peso do seu próprio corpo.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Por quanto tempo terei acesso? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Seu acesso é vitalício. Você poderá ver e rever as aulas quantas vezes
+                        quiser, sem cobranças mensais.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Funciona para quem nunca treinou? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">Sim! Os treinos são progressivos, com níveis que vão do iniciante ao
+                        avançado. Explicamos cada movimento detalhadamente.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Tenho garantia? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Sim, você tem 7 dias de garantia incondicional. Se não gostar do método por
+                        qualquer motivo, devolvemos 100% do seu dinheiro.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guarantee -->
+        <div class="guarantee">
+            <div style="font-size: 3rem; color: #22c55e; margin-bottom: 10px;"><i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 style="font-weight: 700; margin-bottom: 10px; color: #ffffff;">Risco Zero</h3>
+            <p style="color: #94a3b8;">Você tem 7 dias para testar. Se não gostar dos resultados, devolvemos 100% do seu
+                dinheiro. Sem
+                perguntas.</p>
+        </div>
+
+        <!-- Footer sticky CTA Mobile -->
+        <div
+            style="position: fixed; bottom: 0; left:0; width: 100%; padding: 15px; background: #050a08; border-top: 1px solid rgba(34, 197, 94, 0.3); box-shadow: 0 -4px 20px rgba(0,0,0,0.3); display: flex; justify-content: center; z-index: 100;">
+            <a href="#offer" class="btn-cta"
+                style="font-size: 1rem; padding: 15px; background: #22c55e; text-decoration: none;">Começar Agora</a>
+        </div>
+
+    </div>
+
+    <script>
+        // FAQ Accordion Interaction
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // 15-Minute Countdown Timer
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = 0; // Keep at 00:00
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const fifteenMinutes = 60 * 15;
+            const display = document.querySelector('#timer-display');
+            // Check if timer-display exists before starting the timer
+            if (display) {
+                startTimer(fifteenMinutes, display);
+            }
+        };
+
+        // Testimonial Carousel - Infinite Auto-Rotation - ROCK SOLID MOBILE
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.testimonial-card');
+            const track = document.querySelector('.carousel-track');
+
+            if (!track || slides.length === 0) return;
+
+            // Set track width to N * 100% to strictly avoid overflow issues
+            const slideCount = slides.length;
+            track.style.width = `${slideCount * 100}%`;
+            slides.forEach(slide => {
+                slide.style.width = `${100 / slideCount}%`;
+            });
+
+            function updateCarousel() {
+                // Percentage is now relative to the N*100% track
+                track.style.transform = `translateX(-${(currentSlide * 100) / slideCount}%)`;
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateCarousel();
+            }
+
+            let carouselInterval = setInterval(nextSlide, 3500);
+
+            const carousel = document.querySelector('.testimonial-carousel');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+                carousel.addEventListener('mouseleave', () => {
+                    clearInterval(carouselInterval);
+                    carouselInterval = setInterval(nextSlide, 3500);
+                });
+            }
+
+            updateCarousel();
+        });
+
+        // Dynamic Data Binding from localStorage
+        try {
+            const results = JSON.parse(localStorage.getItem('quiz_answers'));
+            if (results) {
+                const profileEl = document.getElementById('dynamic-profile');
+                if (profileEl) {
+                    const age = results['age'] || "30-39";
+                    const targetZone = results['target_zone'] || "Corpo inteiro";
+                    profileEl.innerHTML = `Baseado no seu perfil (<strong>Feminino, ${age}</strong>) e foco em <strong>${targetZone}</strong>, criamos a rotina perfeita para você.`;
+                }
+                // Diagnostic Card Binding
+                const genderEl = document.getElementById('diag-gender');
+                const zoneEl = document.getElementById('diag-zone');
+
+                if (genderEl) genderEl.textContent = results['gender'] || "Feminino";
+                if (zoneEl) zoneEl.textContent = results['target_zone'] || "Corpo Inteiro";
+            }
+        } catch (e) {
+            console.error("Erro ao carregar dados do quiz", e);
+        }
+
+        // Order Bump Interaction
+        function toggleBump(element) {
+            const checkbox = element.querySelector('.order-bump-checkbox');
+            checkbox.checked = !checkbox.checked;
+
+            // Visual feedback
+            if (checkbox.checked) {
+                element.style.borderColor = "#22c55e";
+                element.style.background = "rgba(34, 197, 94, 0.15)";
+            } else {
+                element.style.borderColor = "rgba(34, 197, 94, 0.4)";
+                element.style.background = "rgba(34, 197, 94, 0.05)";
+            }
+        }
+    </script>
+</body>
+
+>>>>>>> 1163a535a0200d856931e25439ba8d23ae74c8da
 </html>
