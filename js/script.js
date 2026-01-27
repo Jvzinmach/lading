@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // === Data: 20-Step Quiz ===
-    // === Data: 20-Step Quiz ===
+    // === Data: 23-Step Quiz (Questions + Interstitials) ===
     const questions = [
-        // 1. Age (Images from Inlead source)
+        // 1. Age
         {
             question: "Qual a sua <span style='color: var(--primary);'>idade</span>?",
             category: "age",
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "50+ anos", image: "https://cloudfront.inlead.cloud/uploads/13/18-08-2024/md-bpkdq-fwwg06glxotv7mzybh9b.webp" }
             ]
         },
-        // 2. Body Type (Modified with Images as requested)
+        // 2. Body Type
         {
             question: "Qual formato de corpo <span style='color: var(--primary);'>mais se parece</span> com o seu?",
             category: "body_type",
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Retângulo (Mais reto)", image: "./images/body_rectangle.svg" }
             ]
         },
-        // 3. Current Weight Goal (Updated with Source HTML Images)
+        // 3. Current Weight Goal
         {
             question: "Como você descreveria o <span style='color: var(--primary);'>seu corpo</span> hoje?",
             category: "weight_perception",
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Acima do peso", image: "https://cloudfront.inlead.cloud/uploads/367/31-08-2024/md-coprb-qu4t4934hg6z9mx78jae-kpcs9h.png" }
             ]
         },
-        // Social Proof 1
+        // 4. Social Proof 1
         {
             type: "interstitial",
             category: "social_proof_1",
@@ -44,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "images/results/transform_1.jpg",
             testimonial: "\"Em apenas 3 semanas eu já sentia minhas roupas folgadas. O método realmente funciona!\""
         },
-        // 4. Target Zone
+        // 5. Target Zone
         {
             question: "Qual área você quer <span style='color: var(--primary);'>transformar primeiro</span>?",
             category: "target_zone",
@@ -55,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Corpo inteiro", icon: "fa-solid fa-child" }
             ]
         },
-        // 5. Activity Level
+        // 6. Activity Level
         {
             question: "Nível de <span style='color: var(--primary);'>atividade física</span> hoje:",
             category: "activity_level",
@@ -66,14 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Intensa (Atleta)", icon: "fa-solid fa-medal" }
             ]
         },
-        // 6. INTERSTITIAL: Metabolic Calculation
+        // 7. INTERSTITIAL: Metabolic Calculation
         {
             type: "interstitial",
             category: "metabolic_calc",
             title: "Calculando Idade Metabólica...",
             text: "Baseado no seu perfil, sua queima calórica pode estar até 30% abaixo do ideal. Vamos ajustar isso."
         },
-        // 7. Experience with Calisthenics
+        // 8. Experience with Calisthenics
         {
             question: "Já praticou <span style='color: var(--primary);'>Calistenia</span> antes?",
             category: "experience",
@@ -84,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Sou experiente", icon: "fa-solid fa-medal" }
             ]
         },
-        // 8. Push-up Test
+        // 9. Push-up Test
         {
             question: "Quantas <span style='color: var(--primary);'>flexões</span> você consegue fazer?",
             category: "pushups",
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Mais de 10 (Sou forte)", icon: "fa-solid fa-battery-full" }
             ]
         },
-        // Social Proof 2
+        // 10. Social Proof 2
         {
             type: "interstitial",
             category: "social_proof_2",
@@ -104,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "images/results/transform_2.jpg",
             testimonial: "\"O segredo foi seguir o passo a passo. A gordura da barriga sumiu!\""
         },
-        // 9. Equipment Access (Crucial for Home Workout)
+        // 11. Equipment Access
         {
             question: "O que você tem <span style='color: var(--primary);'>em casa</span>?",
             category: "equipment",
@@ -115,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Equipamento completo", icon: "fa-solid fa-bicycle" }
             ]
         },
-        // 10. Workout Duration
+        // 12. Workout Duration
         {
             question: "Quanto tempo você tem <span style='color: var(--primary);'>por dia</span>?",
             category: "duration",
@@ -126,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Tempo não é problema", icon: "fa-solid fa-calendar-check" }
             ]
         },
-        // 11. INTERSTITIAL: Water Tracker Feature
+        // 13. INTERSTITIAL: Water Tracker Feature
         {
             type: "interstitial",
             category: "app_feature_water",
@@ -134,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
             text: "Nosso app calcula exatamente quantos litros de água você precisa beber para desinchar e acelerar o metabolismo.",
             image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&q=80&w=600"
         },
-        // 12. Water Intake
+        // 14. Water Intake
         {
             question: "Você bebe <span style='color: var(--primary);'>água suficiente</span>?",
             category: "water_habit",
@@ -145,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Sim, bebo muita água", icon: "fa-solid fa-faucet" }
             ]
         },
-        // 13. Diet Struggles
+        // 15. Diet Struggles
         {
             question: "Qual sua maior <span style='color: var(--primary);'>dificuldade na dieta</span>?",
             category: "diet_struggle",
@@ -156,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Não sei o que comer", icon: "fa-solid fa-question-circle" }
             ]
         },
-        // 14. INTERSTITIAL: Meal Plan Feature
+        // 16. INTERSTITIAL: Meal Plan Feature
         {
             type: "interstitial",
             category: "app_feature_food",
@@ -164,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
             text: "Não se preocupe! O app gera um plano alimentar diário e até sua lista de compras automática.",
             image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=600"
         },
-        // 15. Cooking Habits
+        // 17. Cooking Habits
         {
             question: "Você costuma <span style='color: var(--primary);'>cozinhar</span>?",
             category: "cooking",
@@ -175,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Amo cozinhar tudo", icon: "fa-solid fa-utensils" }
             ]
         },
-        // Social Proof 3
+        // 18. Social Proof 3
         {
             type: "interstitial",
             category: "social_proof_3",
@@ -184,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "images/results/transform_3.jpg",
             testimonial: "\"Eu achei que não conseguiria por causa do tempo, mas os treinos curtos mudaram tudo!\""
         },
-        // 16. Sleep Quality
+        // 19. Sleep Quality
         {
             question: "Como é a qualidade do seu <span style='color: var(--primary);'>sono</span>?",
             category: "sleep",
@@ -195,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Durmo muito bem", icon: "fa-solid fa-moon" }
             ]
         },
-        // 17. Energy Levels
+        // 20. Energy Levels
         {
             question: "Como você se sente <span style='color: var(--primary);'>durante o dia</span>?",
             category: "energy",
@@ -206,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Energia total o dia todo", icon: "fa-solid fa-sun" }
             ]
         },
-        // 18. INTERSTITIAL: Social Proof 4 (FINAL GRID)
+        // 21. INTERSTITIAL: Social Proof 4 (FINAL GRID)
         {
             type: "interstitial",
             category: "social_proof_final",
@@ -219,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "images/results/final_4.jpg"
             ]
         },
-        // 19. Motivation
+        // 22. Motivation
         {
             question: "O que te faria <span style='color: var(--primary);'>não desistir</span>?",
             category: "motivation_trigger",
@@ -230,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { text: "Um plano passo-a-passo claro", icon: "fa-solid fa-list-check" }
             ]
         },
-        // 20. Commitment (Last Step)
+        // 23. Commitment
         {
             question: "Você está pronta para se <span style='color: var(--primary);'>transformar</span>?",
             category: "commitment",
@@ -252,7 +251,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // === Functions ===
     function init() {
+        captureUTMs();
         renderQuestion();
+    }
+
+    function captureUTMs() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const utms = {};
+        const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'src'];
+        utmKeys.forEach(key => {
+            const value = urlParams.get(key);
+            if (value) utms[key] = value;
+        });
+        if (Object.keys(utms).length > 0) localStorage.setItem('utm_parameters', JSON.stringify(utms));
     }
 
     function renderQuestion() {
@@ -306,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function () {
             contentEl.appendChild(title);
         };
 
-        // === TYPE 1: AGE GRID (Special 2x2 Layout) ===
+        // === TYPE 1: GRID LAYOUT (ONLY for Age) ===
         if (q.category === 'age') {
             const header = document.createElement('div');
             header.className = 'question-header fade-in';
@@ -420,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (image) {
                 html += `<div class="option-image-wrapper"><img src="${image}" class="option-image"></div>`;
             } else if (icon) {
-                html += `<div class="option-image-wrapper"><i class="${icon} option-icon"></i></div>`;
+                html += `<div class="option-image-wrapper"><i class="${icon} icon-option"></i></div>`;
             }
             html += `<div class="option-content"><span class="option-label">${text}</span><div class="custom-radio"></div></div>`;
 
@@ -433,9 +444,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function handleAnswer(answer, category) {
         answers[category] = answer;
-        // Persistir no localStorage para o checkout usar
         localStorage.setItem('quiz_answers', JSON.stringify(answers));
-
         currentStep++;
         renderQuestion();
     }
@@ -472,12 +481,11 @@ document.addEventListener('DOMContentLoaded', function () {
             showStep('step-4', 3800);
 
             setTimeout(() => {
-                // Redirect to the Checkout Page (checkout.html)
                 window.location.href = 'checkout.html';
             }, 5500);
         }
     }
 
-    // Start
     init();
 });
+
