@@ -24,12 +24,15 @@
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '911088761414065');
+        fbq('init', '794708607004793');
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=911088761414065&ev=PageView&noscript=1" /></noscript>
+            src="https://www.facebook.com/tr?id=794708607004793&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- UTMify -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
     <style>
         html {
             scroll-behavior: smooth;
@@ -1368,8 +1371,31 @@
             updateCarousel();
         });
 
-        // Generic values - no dynamic binding needed
-        // All users see the same diagnostic information
+        // Dynamic Data Binding from localStorage
+        try {
+            const results = JSON.parse(localStorage.getItem('quiz_answers'));
+            if (results) {
+                const profileEl = document.getElementById('dynamic-profile');
+                const age = results['age'] || "30-39";
+                const targetZone = results['target_zone'] || "Corpo Inteiro";
+                const gender = results['gender'] || "Feminino";
+
+                if (profileEl) {
+                    profileEl.innerHTML = `Baseado no seu perfil (<strong>${gender}, ${age}</strong>) e foco em <strong>${targetZone}</strong>, criamos a rotina perfeita para você.`;
+                }
+
+                // Diagnostic Card & Headline Binding
+                const genderEl = document.getElementById('diag-gender');
+                const zoneEl = document.getElementById('diag-zone');
+                const zoneTextEl = document.getElementById('diag-zone-text');
+
+                if (genderEl) genderEl.textContent = gender;
+                if (zoneEl) zoneEl.textContent = targetZone;
+                if (zoneTextEl) zoneTextEl.textContent = targetZone;
+            }
+        } catch (e) {
+            console.error("Erro ao carregar dados do quiz", e);
+        }
 
         // Order Bump Interaction (if any buttons need tracking)
         document.querySelectorAll('.btn-cta').forEach(button => {

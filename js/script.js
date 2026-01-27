@@ -481,7 +481,23 @@ document.addEventListener('DOMContentLoaded', function () {
             showStep('step-4', 3800);
 
             setTimeout(() => {
-                window.location.href = 'checkout.html';
+                let checkoutUrl = 'checkout.html';
+                const storedUtms = localStorage.getItem('utm_parameters');
+
+                if (storedUtms) {
+                    try {
+                        const utms = JSON.parse(storedUtms);
+                        const params = new URLSearchParams(utms);
+                        checkoutUrl += `?${params.toString()}`;
+                    } catch (e) {
+                        console.error('Error parsing stored UTMs:', e);
+                    }
+                } else if (window.location.search) {
+                    // Fallback: pass current query params if not in local storage
+                    checkoutUrl += window.location.search;
+                }
+
+                window.location.href = checkoutUrl;
             }, 5500);
         }
     }
