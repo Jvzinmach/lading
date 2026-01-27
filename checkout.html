@@ -1368,31 +1368,8 @@
             updateCarousel();
         });
 
-        // Dynamic Data Binding from localStorage
-        try {
-            const results = JSON.parse(localStorage.getItem('quiz_answers'));
-            if (results) {
-                const profileEl = document.getElementById('dynamic-profile');
-                const age = results['age'] || "30-39";
-                const targetZone = results['target_zone'] || "Corpo Inteiro";
-                const gender = results['gender'] || "Feminino";
-
-                if (profileEl) {
-                    profileEl.innerHTML = `Baseado no seu perfil (<strong>${gender}, ${age}</strong>) e foco em <strong>${targetZone}</strong>, criamos a rotina perfeita para você.`;
-                }
-
-                // Diagnostic Card & Headline Binding
-                const genderEl = document.getElementById('diag-gender');
-                const zoneEl = document.getElementById('diag-zone');
-                const zoneTextEl = document.getElementById('diag-zone-text');
-
-                if (genderEl) genderEl.textContent = gender;
-                if (zoneEl) zoneEl.textContent = targetZone;
-                if (zoneTextEl) zoneTextEl.textContent = targetZone;
-            }
-        } catch (e) {
-            console.error("Erro ao carregar dados do quiz", e);
-        }
+        // Generic values - no dynamic binding needed
+        // All users see the same diagnostic information
 
         // Order Bump Interaction (if any buttons need tracking)
         document.querySelectorAll('.btn-cta').forEach(button => {
