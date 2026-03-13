@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techcel - Assistência Técnica e Vendas de iPhone</title>
+    <meta name="description" content="Assistência técnica especializada e vendas de iPhone com qualidade garantida. Atendemos todo o Brasil via envio.">
+    <!-- Open Graph / redes sociais -->
+    <meta property="og:title" content="Techcel - Assistência Técnica e Vendas de iPhone">
+    <meta property="og:description" content="Assistência técnica especializada e vendas de iPhone com qualidade garantida. Atendemos todo o Brasil via envio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techstore.com.br">
+    <meta property="og:image" content="https://storage.googleapis.com/hostinger-horizons-assets-prod/e7afbd96-7678-4753-b0a4-a666721eb944/37435775828fa251f95bb18b0da80944.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-black text-white antialiased relative overflow-x-hidden">
+    <!-- Efeitos de Brilho no Fundo -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-[-1]">
+        <div class="bg-glow top-20 left-0"></div>
+        <div class="bg-glow top-[40%] right-0" style="background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%);"></div>
+        <div class="bg-glow bottom-20 left-0"></div>
+    </div>
+
+    <!-- Header fixo -->
+    <header class="fixed top-0 w-full z-50 glass-effect">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">Techcel</div>
+            <!-- Menu desktop -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#servicos" class="hover:text-orange-500 transition-colors">Serviços</a>
+                <a href="#lojas" class="hover:text-orange-500 transition-colors">Lojas</a>
+                <a href="#curso" class="hover:text-orange-500 transition-colors">Curso</a>
+                <a href="#faq" class="hover:text-orange-500 transition-colors">FAQ</a>
+                <a href="#contato" class="hover:text-orange-500 transition-colors">Contato</a>
+            </div>
+            <!-- Botão menu mobile -->
+            <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu mobile dropdown -->
+        <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-black/95 backdrop-blur-md p-6 transform -translate-x-full md:hidden mobile-menu border-b border-white/10">
+            <div class="flex flex-col space-y-4">
+                <a href="#servicos" class="hover:text-orange-500 transition-colors">Serviços</a>
+                <a href="#lojas" class="hover:text-orange-500 transition-colors">Lojas</a>
+                <a href="#curso" class="hover:text-orange-500 transition-colors">Curso</a>
+                <a href="#faq" class="hover:text-orange-500 transition-colors">FAQ</a>
+                <a href="#contato" class="hover:text-orange-500 transition-colors">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20"> <!-- compensa o header fixo -->
+        <!-- Hero Section -->
+        <section class="pt-20 pb-20 px-6 relative overflow-hidden">
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                    <!-- Conteúdo Esquerda -->
+                    <div class="text-left reveal">
+                        <div class="inline-block px-4 py-1 rounded-full bg-orange-500/10 text-orange-500 text-xs md:text-sm font-semibold mb-8 border border-orange-500/20">
+                            ✨ A Melhor Assistência Especializada de Vitória
+                        </div>
+                        <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
+                            Seu Celular em <span class="gradient-text">Boas Mãos.</span>
+                        </h1>
+                        <p class="text-xl text-gray-300 mb-10 max-w-xl">
+                            +10 anos de experiência e mais de 50.000 clientes satisfeitos. Especialistas na linha Apple e Assistência Android. As melhores peças do mercado com qualidade que você confia.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/5527997413013" target="_blank" class="btn-shine inline-flex items-center justify-center font-bold rounded-xl bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4 transition shadow-lg shadow-orange-500/20">
+                                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                Falar com Especialista
+                            </a>
+                            <a href="#servicos" class="inline-flex items-center justify-center font-bold rounded-xl border border-white/10 hover:bg-white/5 text-white text-lg px-8 py-4 transition">
+                                Ver Todos os Serviços
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Imagem Direita -->
+                    <div class="relative hidden lg:block reveal">
+                        <div class="absolute inset-0 hero-glow blur-3xl rounded-full"></div>
+                        <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/e7afbd96-7678-4753-b0a4-a666721eb944/37435775828fa251f95bb18b0da80944.jpg" 
+                             alt="iPhone 13" 
+                             class="relative z-10 w-full max-w-lg mx-auto float-animation object-contain">
+                    </div>
+                </div>
+
+                <!-- Cards Rápidos (Abaixo do Hero) -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto reveal">
+                    <a href="https://wa.me/5527997413013" target="_blank" class="glass-effect p-3 rounded-2xl hover:orange-glow transition border border-white/5 flex flex-col items-center group">
+                        <div class="bg-orange-500/10 p-2 rounded-xl text-orange-500 mb-2 group-hover:bg-orange-500 group-hover:text-white transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <span class="font-bold text-[10px] md:text-sm">Loja Matriz</span>
+                    </a>
+                    <a href="https://wa.me/5527988568911" target="_blank" class="glass-effect p-3 rounded-2xl hover:orange-glow transition border border-white/5 flex flex-col items-center group">
+                        <div class="bg-orange-500/10 p-2 rounded-xl text-orange-500 mb-2 group-hover:bg-orange-500 group-hover:text-white transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <span class="font-bold text-[10px] md:text-sm">Loja 2</span>
+                    </a>
+                    <a href="https://www.instagram.com/techcel.vix/" target="_blank" class="glass-effect p-3 rounded-2xl hover:orange-glow transition border border-white/5 flex flex-col items-center group">
+                        <div class="bg-orange-500/10 p-2 rounded-xl text-orange-500 mb-2 group-hover:bg-orange-500 group-hover:text-white transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </div>
+                        <span class="font-bold text-[10px] md:text-sm">Instagram</span>
+                    </a>
+                    <a href="#curso" class="glass-effect p-3 rounded-2xl hover:orange-glow transition border border-white/5 flex flex-col items-center group">
+                        <div class="bg-orange-500/10 p-2 rounded-xl text-orange-500 mb-2 group-hover:bg-orange-500 group-hover:text-white transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <span class="font-bold text-[10px] md:text-sm">Curso</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção iPhones em Destaque -->
+        <section id="iphones" class="py-20 px-6 bg-gradient-to-r from-orange-500/10 to-transparent">
+            <div class="container mx-auto reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">iPhones <span class="gradient-text">& Assistência</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Venda exclusiva de iPhones (Novos e Seminovos) e Assistência Técnica ultrassônica para todas as marcas (Apple, Samsung, Motorola e Xiaomi). <strong>Especialistas do jeito que você precisa!</strong></p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Aparelhos Apple -->
+                    <div class="glass-effect rounded-2xl p-6 hover:orange-glow transition-all duration-300 flex flex-col">
+                        <div class="aspect-square mb-6 rounded-xl overflow-hidden bg-gray-800 p-4">
+                            <img class="w-full h-full object-contain hover:scale-110 transition-transform duration-500" alt="iPhones Novos e Seminovos" src="assets/img/novo1.jpg" loading="lazy">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">iPhones Lacrados & Seminovos</h3>
+                        <p class="text-orange-500 text-xl font-bold mb-4">Todos os modelos disponíveis</p>
+                        <ul class="space-y-2 mb-6 flex-grow">
+                            <li class="text-gray-300 flex items-center"><svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>Aparelhos 100% Originais</li>
+                            <li class="text-gray-300 flex items-center"><svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>Garantia Total da Loja</li>
+                            <li class="text-gray-300 flex items-center"><svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>Enviamos para todo o Brasil</li>
+                        </ul>
+                        <a href="https://wa.me/5527997413013?text=Olá!%20Gostaria%20de%20saber%20os%20iPhones%20disponíveis" target="_blank" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white w-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>Consultar Modelos e Valores
+                        </a>
+                    </div>
+                    <!-- Aparelhos Celulares Diversos -->
+                    <div class="glass-effect rounded-2xl p-6 hover:orange-glow transition-all duration-300 flex flex-col">
+                        <div class="aspect-square mb-6 rounded-xl overflow-hidden bg-gray-800 p-4">
+                            <img class="w-full h-full object-contain hover:scale-110 transition-transform duration-500" alt="Outras marcas e serviços" src="assets/img/android_destaque.png" loading="lazy">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Assistência Android</h3>
+                        <p class="text-orange-500 text-xl font-bold mb-4">Assistência Especializada</p>
+                        <ul class="space-y-2 mb-6 flex-grow">
+                            <li class="text-gray-300 flex items-center"><svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>Reparos Samsung, Xiaomi, Motorola</li>
+                            <li class="text-gray-300 flex items-center"><svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>Películas em Hidrogel</li>
+                            <li class="text-gray-300 flex items-center"><svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>Acessórios Premium Diversos</li>
+                        </ul>
+                        <a href="https://wa.me/5527997413013?text=Olá!%20Preciso%20de%20assistência%20para%20meu%20Android" target="_blank" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white w-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>Falar com Especialista
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Resultados Reais (Antes e Depois) -->
+        <section id="resultados" class="py-20 px-6 bg-black/50">
+            <div class="container mx-auto reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Resultados <span class="gradient-text">Reais</span></h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto">Veja o nível de detalhamento e cuidado em cada reparo que realizamos.</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <!-- Vídeo Principal: Será que deu trabalho? -->
+                    <a href="https://www.instagram.com/reel/C95uP2MO69V/" target="_blank" class="block glass-effect rounded-3xl overflow-hidden group relative border border-white/5 hover:border-orange-500/30 transition-all duration-500">
+                        <div class="relative aspect-video bg-gray-900 flex items-center justify-center cursor-pointer">
+                            <!-- Overlay de Destaque -->
+                            <div class="absolute top-6 left-6 z-20 bg-orange-600 text-white text-xs font-black px-4 py-2 rounded-lg uppercase tracking-widest shadow-lg">
+                                🔥 Caso Real: Restauração Total
+                            </div>
+                            
+                            <!-- Imagem de Capa do Vídeo (Antes) -->
+                            <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+                                <img src="assets/img/antes_broken.png" alt="iPhone Quebrado - Techcel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2000ms]">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent"></div>
+                                
+                                <!-- Label Antes -->
+                                <div class="absolute top-6 right-6 z-20 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full border border-white/10">
+                                    ESTADO INICIAL (ANTES)
+                                </div>
+
+                                <!-- Botão de Play Estilizado -->
+                                <div class="absolute bg-orange-500 w-20 h-20 rounded-full flex items-center justify-center shadow-2xl shadow-orange-500/50 group-hover:scale-110 transition-transform z-20">
+                                    <svg class="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.333-5.89a1.5 1.5 0 000-2.538L6.3 2.841z"/></svg>
+                                </div>
+
+                                <!-- Texto Hover -->
+                                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-orange-500 font-black text-lg tracking-tighter uppercase italic">
+                                    Clique para ver o resultado ✨
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 border-t border-white/5 bg-gray-900/50">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                <div class="flex-grow">
+                                    <h3 class="text-2xl font-bold mb-2">Será que deu trabalho?</h3>
+                                    <p class="text-gray-400">De um aparelho condenado à perfeição absoluta. Veja os detalhes desse processo.</p>
+                                </div>
+                                <div class="btn-shine inline-flex items-center justify-center font-bold rounded-xl bg-orange-500 text-white px-6 py-3 transition shrink-0 group-hover:bg-orange-600">
+                                    Ver Resultado no Instagram
+                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS DE CLIENTES -->
+        <section id="depoimentos" class="py-20 px-6">
+            <div class="container mx-auto reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">O que nossos <span class="gradient-text">clientes dizem</span></h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto">Mais de 500 clientes satisfeitos em todo o Brasil</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Depoimento 1 -->
+                    <div class="glass-effect rounded-2xl overflow-hidden hover:orange-glow transition flex flex-col h-full">
+                        <div class="h-[450px] overflow-hidden bg-gray-900">
+                            <img src="assets/img/clientes/cliente1.jpg" alt="Cliente Techcel" class="w-full h-full object-cover object-center hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-bold text-lg">Lucas Almeida</h4>
+                                <div class="flex text-orange-500">★★★★★</div>
+                            </div>
+                            <p class="text-gray-300">"Acabei de pegar meu iPhone 11 aqui na TechStore! Atendimento nota 10 e o aparelho está impecável."</p>
+                        </div>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="glass-effect rounded-2xl overflow-hidden hover:orange-glow transition flex flex-col h-full">
+                        <div class="h-[450px] overflow-hidden bg-gray-900">
+                            <img src="assets/img/clientes/cliente2.jpg" alt="Cliente TechStore" class="w-full h-full object-cover object-center hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-bold text-lg">Gabriel Silva</h4>
+                                <div class="flex text-orange-500">★★★★★</div>
+                            </div>
+                            <p class="text-gray-300">"Excelente atendimento! Fui buscar meu iPhone e o pessoal foi super atencioso. A loja é de confiança."</p>
+                        </div>
+                    </div>
+                    <!-- Depoimento 3 -->
+                    <div class="glass-effect rounded-2xl overflow-hidden hover:orange-glow transition flex flex-col h-full">
+                        <div class="h-[450px] overflow-hidden bg-gray-900">
+                            <img src="assets/img/clientes/cliente3.jpg" alt="Cliente TechStore" class="w-full h-full object-cover object-center hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-bold text-lg">Thiago Souza</h4>
+                                <div class="flex text-orange-500">★★★★★</div>
+                            </div>
+                            <p class="text-gray-300">"Sempre compro meus aparelhos aqui. Garantia real e suporte de qualidade. Valeu TechStore!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Curso de Manutenção -->
+        <section id="curso" class="py-20 px-6 bg-gradient-to-b from-gray-900 via-black to-gray-900">
+            <div class="container mx-auto reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Curso de Manutenção: <span class="gradient-text">Sua Nova Carreira</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Aprenda uma nova profissão do zero e transforme sua vida financeira. Oferecemos o treinamento mais completo para você se tornar um especialista em manutenção de celulares.</p>
+                </div>
+                <!-- Grade de módulos -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20 max-w-5xl mx-auto">
+                    <div class="glass-effect rounded-2xl p-6 text-center hover:orange-glow transition">
+                        <div class="flex justify-center mb-4"><div class="bg-gray-800 p-4 rounded-full"><svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div></div>
+                        <h3 class="text-lg font-bold mb-2">Módulo 1: Fundamentos</h3>
+                        <p class="text-sm text-gray-400">Eletrônica básica, ferramentas, segurança e diagnóstico inicial.</p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 text-center hover:orange-glow transition">
+                        <div class="flex justify-center mb-4"><div class="bg-gray-800 p-4 rounded-full"><svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div></div>
+                        <h3 class="text-lg font-bold mb-2">Módulo 2: Troca de Componentes</h3>
+                        <p class="text-sm text-gray-400">Tela, bateria, conector de carga, câmera e botões.</p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 text-center hover:orange-glow transition">
+                        <div class="flex justify-center mb-4"><div class="bg-gray-800 p-4 rounded-full"><svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div></div>
+                        <h3 class="text-lg font-bold mb-2">Módulo 3: Micro Solda</h3>
+                        <p class="text-sm text-gray-400">Reparo em placa, trilhas, CI e componentes minúsculos.</p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 text-center hover:orange-glow transition">
+                        <div class="flex justify-center mb-4"><div class="bg-gray-800 p-4 rounded-full"><svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/></svg></div></div>
+                        <h3 class="text-lg font-bold mb-2">Módulo 4: Software</h3>
+                        <p class="text-sm text-gray-400">Restauração, desbloqueio e ferramentas avançadas.</p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 text-center hover:orange-glow transition">
+                        <div class="flex justify-center mb-4"><div class="bg-gray-800 p-4 rounded-full"><svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div></div>
+                        <h3 class="text-lg font-bold mb-2">Módulo 5: Gestão</h3>
+                        <p class="text-sm text-gray-400">Como abrir sua assistência, precificação e atendimento.</p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 text-center hover:orange-glow transition">
+                        <div class="flex justify-center mb-4"><div class="bg-gray-800 p-4 rounded-full"><svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div></div>
+                        <h3 class="text-lg font-bold mb-2">Módulo 6: Estágio</h3>
+                        <p class="text-sm text-gray-400">Atendimento supervisionado na loja para fixar o aprendizado.</p>
+                    </div>
+                </div>
+                <!-- Seção: Pra Quem é Este Curso? -->
+                <div class="max-w-4xl mx-auto mb-20">
+                    <div class="reveal glass-effect p-8 md:p-12 rounded-3xl border border-white/5">
+                        <h3 class="text-3xl font-bold mb-10 gradient-text text-center">Pra Quem é Este Curso?</h3>
+                        <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                            <div class="flex items-start text-gray-300">
+                                <span class="text-orange-500 mr-4 text-2xl font-bold">☆</span>
+                                <p class="text-lg">Quer começar do zero, mesmo sem nunca ter mexido em um celular.</p>
+                            </div>
+                            <div class="flex items-start text-gray-300">
+                                <span class="text-orange-500 mr-4 text-2xl font-bold">☆</span>
+                                <p class="text-lg">Já trabalha na área e busca as técnicas mais atuais do mercado.</p>
+                            </div>
+                            <div class="flex items-start text-gray-300">
+                                <span class="text-orange-500 mr-4 text-2xl font-bold">☆</span>
+                                <p class="text-lg">Sonha em abrir sua própria assistência técnica e ser seu chefe.</p>
+                            </div>
+                            <div class="flex items-start text-gray-300">
+                                <span class="text-orange-500 mr-4 text-2xl font-bold">☆</span>
+                                <p class="text-lg">Deseja uma nova profissão com alta demanda e renda real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galeria do curso -->
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+                    <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/e7afbd96-7678-4753-b0a4-a666721eb944/6cb530aa9acea6f14c2d74f1fd228b6c.jpg" alt="Aluno consertando iPhone" class="rounded-2xl w-full h-auto object-contain bg-gray-800 p-2 hover:scale-105 transition-transform">
+                    <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/e7afbd96-7678-4753-b0a4-a666721eb944/1c5cd6fe59c02bea7ef170ee3934132f.jpg" alt="iPhone aberto para manutenção" class="rounded-2xl w-full h-auto object-contain bg-gray-800 p-2 hover:scale-105 transition-transform">
+                </div>
+
+                <!-- CTA Curso -->
+                <div class="text-center">
+                    <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Não perca a chance de investir em você! As vagas são limitadas para garantir a qualidade do ensino.</p>
+                    <a href="https://wa.me/5527996977834?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20curso%20de%20manutenção" target="_blank" class="btn-shine inline-flex items-center justify-center font-medium rounded-md bg-orange-500 hover:bg-orange-600 text-white text-lg px-10 py-5 transform hover:scale-105 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>Garantir Minha Vaga
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="servicos" class="py-20 px-6">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Nossos <span class="gradient-text">Serviços</span></h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto">Oferecemos soluções completas para seus dispositivos móveis</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <!-- Reparos Apple -->
+                    <div class="glass-effect rounded-2xl p-8 hover:orange-glow transition">
+                        <div class="text-orange-500 mb-6 flex justify-center">
+                            <div class="bg-gray-800 p-4 rounded-full">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 18h.01"/><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Reparos iPhone</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Troca de tela iPhone</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Troca de bateria iPhone</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Troca de vidro de tela</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Troca de vidro traseiro</li>
+                        </ul>
+                    </div>
+
+                    <!-- Reparos Android e Especializados -->
+                    <div class="glass-effect rounded-2xl p-8 hover:orange-glow transition">
+                        <div class="text-orange-500 mb-6 flex justify-center">
+                            <div class="bg-gray-800 p-4 rounded-full">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Android & Avançado</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Troca de tela Android</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Troca de bateria Android</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Reparo em placa avançado</li>
+                        </ul>
+                    </div>
+
+                    <!-- Vendas -->
+                    <div class="glass-effect rounded-2xl p-8 hover:orange-glow transition">
+                        <div class="text-orange-500 mb-6 flex justify-center">
+                            <div class="bg-gray-800 p-4 rounded-full">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 20.37A2 2 0 0 1 12 21a2 2 0 0 1 1-1.63M2 13h20M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Venda de Aparelhos</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Venda de iPhones lacrados</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Venda de iPhones seminovos</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Acessórios Premium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Lojas -->
+        <section id="lojas" class="py-20 px-6">
+            <div class="container mx-auto reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Nossas <span class="gradient-text">Lojas</span></h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto">Duas unidades estrategicamente localizadas para melhor atendê-lo</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <!-- Matriz -->
+                    <div class="glass-effect rounded-2xl p-8 hover:orange-glow transition flex flex-col">
+                        <div class="aspect-video mb-6 rounded-xl overflow-hidden bg-gray-800 border border-white/5">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.522107420134!2d-40.3288035!3d-20.278645100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d49f8f88563%3A0x3fa327e681fd4a51!2sRodovia%20Serafim%20Derenzi%2C%205553%20-%20Reden%C3%A7%C3%A3o%2C%20Vit%C3%B3ria%20-%20ES%2C%2029031-300!5e0!3m2!1spt-BR!2sbr!4v1773341204471!5m2!1spt-BR!2sbr" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Loja 1 - Matriz</h3>
+                        <div class="space-y-3 mb-6 flex-grow">
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Rodovia%20Serafim%20Derenzi%2C%205553%20-%20Redenção%2C%20Vitória%20-%20ES%2C%2029032-760" target="_blank" class="text-gray-300 hover:text-orange-400 transition-colors">Rodovia Serafim Derenzi, 5553 - Redenção, Vitória - ES, 29032-760</a>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span class="text-gray-300 whitespace-pre-line">Segunda a Sexta: 09:00 às 19:00<br>Sábado: 09:00 às 14:00</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5527997413013?text=Olá!%20Preciso%20de%20informações%20sobre%20a%20Loja%20Matriz" target="_blank" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white w-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>Entrar em Contato
+                        </a>
+                    </div>
+                    <!-- Loja 2 -->
+                    <div class="glass-effect rounded-2xl p-8 hover:orange-glow transition flex flex-col">
+                        <div class="aspect-video mb-6 rounded-xl overflow-hidden bg-gray-800 border border-white/5">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.4393887561214!2d-40.333945400000005!3d-20.28207219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d3756371755%3A0xa50908888dc406ad!2sRodovia%20Serafim%20Derenzi%2C%204288%20-%20Grande%20Vit%C3%B3ria%2C%20Vit%C3%B3ria%20-%20ES%2C%2029033-334!5e0!3m2!1spt-BR!2sbr!4v1773341291078!5m2!1spt-BR!2sbr" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Loja 2</h3>
+                        <div class="space-y-3 mb-6 flex-grow">
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Rodovia%20Serafim%20Derenzi%2C%204288%20-%20Grande%20Vitória%2C%20Vitória%20-%20ES%2C%2029033-334" target="_blank" class="text-gray-300 hover:text-orange-400 transition-colors">Rodovia Serafim Derenzi, 4288 - Grande Vitória, Vitória - ES, 29033-334</a>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-orange-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span class="text-gray-300 whitespace-pre-line">Segunda a Sexta: 09:00 às 19:00<br>Sábado: Fechado</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5527988568911?text=Olá!%20Preciso%20de%20informações%20sobre%20a%20Loja%202" target="_blank" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white w-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>Entrar em Contato
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção FAQ -->
+        <section id="faq" class="py-20 px-6">
+            <div class="container mx-auto max-w-3xl reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Dúvidas <span class="gradient-text">Frequentes</span></h2>
+                    <p class="text-xl text-gray-300">Tudo o que você precisa saber sobre nossos serviços e curso</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item glass-effect rounded-2xl overflow-hidden border border-white/5">
+                        <button class="faq-header w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/5 transition focus:outline-none">
+                            <span class="text-lg font-semibold">Quanto tempo demora o reparo?</span>
+                            <svg class="faq-icon w-6 h-6 text-orange-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content px-8 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="py-6 text-gray-400">A maioria dos reparos (tela e bateria) é feita em até 2 horas. Reparos em placa podem levar de 1 a 3 dias úteis.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item glass-effect rounded-2xl overflow-hidden border border-white/5">
+                        <button class="faq-header w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/5 transition focus:outline-none">
+                            <span class="text-lg font-semibold">Vocês vendem iPhones para todo o Brasil?</span>
+                            <svg class="faq-icon w-6 h-6 text-orange-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content px-8 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="py-6 text-gray-400">Sim! Enviamos via SEDEX com seguro para qualquer cidade do Brasil. O pagamento é facilitado via cartão ou PIX.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item glass-effect rounded-2xl overflow-hidden border border-white/5">
+                        <button class="faq-header w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/5 transition focus:outline-none">
+                            <span class="text-lg font-semibold">Preciso de experiência para o curso?</span>
+                            <svg class="faq-icon w-6 h-6 text-orange-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content px-8 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="py-6 text-gray-400">Não! Nosso curso é focado em quem está começando do absoluto zero. Ensinamos desde o básico até técnicas avançadas de reparo.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item glass-effect rounded-2xl overflow-hidden border border-white/5">
+                        <button class="faq-header w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/5 transition focus:outline-none">
+                            <span class="text-lg font-semibold">Os seminovos têm garantia?</span>
+                            <svg class="faq-icon w-6 h-6 text-orange-500 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content px-8 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="py-6 text-gray-400">Sim, todos os nossos aparelhos seminovos passam por uma rigorosa revisão técnica e contam com 90 dias de garantia total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato Final -->
+        <section id="contato" class="py-20 px-6 bg-gradient-to-r from-orange-500/20 to-transparent">
+            <div class="container mx-auto text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Pronto para <span class="gradient-text">Começar?</span></h2>
+                    <p class="text-xl text-gray-300 mb-12">Entre em contato conosco agora mesmo e receba atendimento especializado</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://wa.me/5527997413013?text=Olá!%20Quero%20comprar%20um%20iPhone" target="_blank" class="btn-shine inline-flex items-center justify-center font-medium rounded-md bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4 transition">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>Comprar iPhone
+                        </a>
+                        <a href="https://wa.me/5527997413013?text=Olá!%20Preciso%20de%20um%20orçamento%20para%20reparo" target="_blank" class="inline-flex items-center justify-center font-medium rounded-md border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white text-lg px-8 py-4 transition">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5527997413013" target="_blank" class="whatsapp-float bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center justify-center pulse-orange">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-800">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-2xl font-bold gradient-text">Techcel</span>
+                    <p class="text-gray-400 mt-4">Assistência técnica especializada e vendas de iPhone com qualidade garantida.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="https://www.instagram.com/techcel.vix/" target="_blank" class="bg-gray-800 p-2 rounded-lg text-gray-400 hover:text-orange-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-semibold text-white mb-4 block">Serviços</span>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Reparos de iPhone</li>
+                        <li>Reparos de Android</li>
+                        <li>Venda de Seminovos e Lacrados</li>
+                        <li>Reparo em Placa Especializado</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="font-semibold text-white mb-4 block">Contato</span>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Loja Matriz: <a href="https://wa.me/5527997413013" class="hover:text-orange-400">27 99741-3013</a></li>
+                        <li>Loja 2: <a href="https://wa.me/5527988568911" class="hover:text-orange-400">27 98856-8911</a></li>
+                        <li>Curso: <a href="https://wa.me/5527996977834" class="hover:text-orange-400">27 99697-7834</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="font-semibold text-white mb-4 block">Horários</span>
+                    <div class="text-gray-400">
+                        <span class="font-semibold text-gray-300 block">Loja Matriz</span>
+                        <p class="whitespace-pre-line">Segunda a Sexta: 09:00 às 19:00<br>Sábado: 09:00 às 14:00</p>
+                        <span class="font-semibold text-gray-300 block mt-2">Loja 2</span>
+                        <p class="whitespace-pre-line">Segunda a Sexta: 09:00 às 19:00<br>Sábado: Fechado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2026 Techcel. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
